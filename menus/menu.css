@@ -1,0 +1,49 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  grid-gap: 0;
+  font-family: 'Tinos';
+}
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  font-size: 1.3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: '.';
+  max-width: 20rem;
+  margin: 2rem;
+  padding: 0.5rem;
+}
+
+.container > *:not(img) {
+  display: flex;
+  padding: 1rem 0;
+  word-wrap: break-word;
+}
+
+.container > .description {
+  align-items: center;
+}
+
+.container > .price {
+  align-items: flex-end;
+}
+
+.container > .name {
+  align-items: start;
+}
+
+.img {
+  width: 20rem;
+  height: 20rem;
+}
